@@ -25,9 +25,4 @@
     <Using Include="Xunit" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Fakes\" />
-    <Folder Include="Services\" />
-  </ItemGroup>
-
 </Project>
