@@ -11,14 +11,14 @@ namespace Santander.HackerNews.Api.Services;
 /// without performing direct HTTP calls itself.
 /// </summary>
 internal sealed class BestStoriesService(
-    HackerNewsClient hn,
+    IHackerNewsClient hn,
     IMemoryCache cache,
     AsyncKeyedLocker locker)
 {
     private const string BestIdsCacheKey = "hn:beststories:ids";
     private const string RankedCacheKey = "hn:beststories:ranked";
 
-    private readonly HackerNewsClient _hn = hn;
+    private readonly IHackerNewsClient _hn = hn;
     private readonly IMemoryCache _cache = cache;
     private readonly AsyncKeyedLocker _locker = locker;
 
