@@ -5,7 +5,7 @@ VisualStudioVersion = 17.13.35913.81 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Santander.HackerNews.Api", "Santander.HackerNews.Api\Santander.HackerNews.Api.csproj", "{BA6E3AAC-8E37-4F09-852A-F2AE86FA46FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Santander.HackerNews.Tests", "Santander.HackerNews.Tests\Santander.HackerNews.Tests.csproj", "{9A42D5E0-1859-4A0B-89F4-0D3AA2460E97}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Santander.HackerNews.Api.Tests", "Santander.HackerNews.Api.Tests\Santander.HackerNews.Api.Tests.csproj", "{9A42D5E0-1859-4A0B-89F4-0D3AA2460E97}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
