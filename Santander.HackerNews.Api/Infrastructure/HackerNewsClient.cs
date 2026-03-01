@@ -4,12 +4,12 @@
 /// Thin HTTP client responsible for retrieving data from the official Hacker News API.
 /// This type contains no business rules, caching or ranking logic.
 /// </summary>
-internal sealed class HackerNewsClient(HttpClient http)
+internal sealed class HackerNewsClient(HttpClient http): IHackerNewsClient
 {
     /// <summary>
     /// Retrieves the list of item IDs representing the current "best stories" set.
     /// </summary>
-    internal async Task<IReadOnlyList<long>> GetBestStoryIdsAsync(CancellationToken ct)
+    public async Task<IReadOnlyList<long>> GetBestStoryIdsAsync(CancellationToken ct)
     {
         var ids = await http.GetFromJsonAsync<long[]>("v0/beststories.json", ct);
         return ids ?? [];
@@ -19,7 +19,7 @@ internal sealed class HackerNewsClient(HttpClient http)
     /// Retrieves a single Hacker News item by ID.
     /// The item may represent a story, comment, job, poll or other item types.
     /// </summary>
-    internal async Task<HackerNewsItem?> GetItemAsync(long id, CancellationToken ct)
+    public async Task<HackerNewsItem?> GetItemAsync(long id, CancellationToken ct)
     {
         return await http.GetFromJsonAsync<HackerNewsItem>($"v0/item/{id}.json", ct);
     }
