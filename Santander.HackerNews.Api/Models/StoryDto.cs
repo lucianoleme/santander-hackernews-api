@@ -14,7 +14,6 @@
 
         /// <summary>
         /// The canonical URL of the story.
-        /// If the original URL is not available, this may point to the Hacker News item page.
         /// </summary>
         public string Uri { get; set; } = string.Empty;
 
@@ -24,7 +23,7 @@
         public string PostedBy { get; set; } = string.Empty;
 
         /// <summary>
-        /// The time the story was posted, formatted as an ISO 8601 UTC string.
+        /// The time the story was posted as a string.
         /// </summary>
         public string Time { get; set; } = string.Empty;
 
