@@ -10,7 +10,7 @@ builder.Services.AddMemoryCache();
 
 builder.Services.AddSingleton<AsyncKeyedLocker>();
 
-builder.Services.AddHttpClient<HackerNewsClient>(http =>
+builder.Services.AddHttpClient<IHackerNewsClient, HackerNewsClient>(http =>
 {
     http.BaseAddress = new Uri("https://hacker-news.firebaseio.com/");
     http.Timeout = TimeSpan.FromSeconds(10);
