@@ -158,5 +158,6 @@ Santander.HackerNews.Api.Tests
 
 ## Notes
 
-This service depends on the public Hacker News API. Availability and data shape are controlled by the upstream service. 
+This service depends on the public Hacker News API. Availability and data shape are controlled by the upstream service. If the upstream service is unavailable or the network is down, requests may fail with HTTP 500.
+
 The hard limit of n less than or equal to 200 is a simple abuse prevention measure.
