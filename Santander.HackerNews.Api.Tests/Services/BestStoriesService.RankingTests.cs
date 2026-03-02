@@ -66,4 +66,40 @@ public sealed class BestStoriesServiceRankingTests
 
         Assert.Empty(result);
     }
+
+    [Fact]
+    public async Task GetBestAsync_WhenItemUrlIsMissing_UsesHackerNewsItemLink()
+    {
+        // Arrange
+        var fake = new FakeHackerNewsClient
+        {
+            BestIds = [42]
+        };
+
+        fake.ItemsById[42] = new HackerNewsItem
+        {
+            Id = 42,
+            Type = "story",
+            Title = "Ask HN",
+            By = "user",
+            Time = 1,
+            Score = 10,
+            Descendants = 0,
+            Url = null
+        };
+
+        using var cache = new MemoryCache(new MemoryCacheOptions());
+        var locker = new AsyncKeyedLocker();
+        var svc = new BestStoriesService(fake, cache, locker);
+
+        // Act
+        var result = await svc.GetBestAsync(1, CancellationToken.None);
+
+        // Assert
+        Assert.Single(result);
+        Assert.Equal(
+            "https://news.ycombinator.com/item?id=42",
+            result[0].Uri
+        );
+    }
 }
