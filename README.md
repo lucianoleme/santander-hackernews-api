@@ -130,6 +130,7 @@ Current coverage includes:
 - Production uses HackerNewsClient while tests inject a fake implementation
 - Infrastructure payload types are kept internal to avoid leaking external API shapes
 - File scoped namespaces are used for clarity and reduced indentation
+- XML documentation comments are used on public and internal contracts to enable automated documentation generation if needed
 
 ## Future IMPROVEMENTS intentionally deferred
 
