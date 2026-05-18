@@ -1,4 +1,4 @@
-# Santander HackerNews API
+# HackerNews BestStories API
 
 A small .NET 8 Web API that returns the top n Hacker News stories ranked by score in descending order.
 
@@ -30,7 +30,7 @@ Prerequisites:
 From the solution root:
 
 dotnet restore  
-dotnet run --project Santander.HackerNews.Api
+dotnet run --project HackerNews.BestStories.Api
 
 The API will start on HTTPS and HTTP endpoints. If this is the first time you run it locally you may be prompted to trust the ASP.NET Core development certificate.
 
@@ -144,7 +144,7 @@ These are valuable in production but out of scope for a small coding exercise.
 
 ## Project structure
 
-Santander.HackerNews.Api
+HackerNews.BestStories.Api
 - Program.cs
 - Models/StoryDto.cs
 - Services/BestStoriesService.cs
@@ -152,7 +152,7 @@ Santander.HackerNews.Api
 - Infrastructure/IHackerNewsClient.cs
 - Infrastructure/AsyncKeyedLocker.cs
 
-Santander.HackerNews.Api.Tests
+HackerNews.BestStories.Api.Tests
 - Fakes/FakeHackerNewsClient.cs
 - Services/BestStoriesService.RankingTests.cs
 - Services/BestStoriesService.CachingTests.cs

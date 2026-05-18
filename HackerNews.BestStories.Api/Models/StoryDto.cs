@@ -1,4 +1,4 @@
-﻿namespace Santander.HackerNews.Api.Models
+﻿namespace HackerNews.BestStories.Api.Models
 {
     /// <summary>
     /// Represents a Hacker News story exposed by the API.

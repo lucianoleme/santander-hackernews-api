@@ -1,4 +1,4 @@
-﻿namespace Santander.HackerNews.Api.Infrastructure;
+﻿namespace HackerNews.BestStories.Api.Infrastructure;
 
 /// <summary>
 /// Thin HTTP client responsible for retrieving data from the official Hacker News API.

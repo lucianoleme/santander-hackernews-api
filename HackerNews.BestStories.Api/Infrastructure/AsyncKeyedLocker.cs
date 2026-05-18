@@ -1,6 +1,6 @@
 ﻿using System.Collections.Concurrent;
 
-namespace Santander.HackerNews.Api.Infrastructure;
+namespace HackerNews.BestStories.Api.Infrastructure;
 
 /// <summary>
 /// Provides async-safe mutual exclusion scoped by a string key.

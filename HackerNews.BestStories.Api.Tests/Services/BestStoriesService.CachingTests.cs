@@ -1,9 +1,9 @@
 ﻿using Microsoft.Extensions.Caching.Memory;
-using Santander.HackerNews.Api.Infrastructure;
-using Santander.HackerNews.Api.Services;
-using Santander.HackerNews.Api.Tests.Fakes;
+using HackerNews.BestStories.Api.Infrastructure;
+using HackerNews.BestStories.Api.Services;
+using HackerNews.BestStories.Api.Tests.Fakes;
 
-namespace Santander.HackerNews.Api.Tests.Services;
+namespace HackerNews.BestStories.Api.Tests.Services;
 
 public sealed class BestStoriesServiceCachingTests
 {

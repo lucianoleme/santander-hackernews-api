@@ -1,4 +1,4 @@
-﻿namespace Santander.HackerNews.Api.Infrastructure;
+﻿namespace HackerNews.BestStories.Api.Infrastructure;
 
 /// <summary>
 /// Abstraction for a client that retrieves data from the Hacker News API.

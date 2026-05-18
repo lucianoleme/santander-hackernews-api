@@ -1,6 +1,6 @@
-﻿using Santander.HackerNews.Api.Infrastructure;
+﻿using HackerNews.BestStories.Api.Infrastructure;
 
-namespace Santander.HackerNews.Api.Tests.Fakes;
+namespace HackerNews.BestStories.Api.Tests.Fakes;
 
 internal sealed class FakeHackerNewsClient : IHackerNewsClient
 {

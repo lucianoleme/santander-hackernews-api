@@ -1,5 +1,5 @@
-using Santander.HackerNews.Api.Infrastructure;
-using Santander.HackerNews.Api.Services;
+using HackerNews.BestStories.Api.Infrastructure;
+using HackerNews.BestStories.Api.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 

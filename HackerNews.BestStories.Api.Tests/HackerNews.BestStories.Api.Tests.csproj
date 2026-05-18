@@ -7,11 +7,11 @@
 
     <IsPackable>false</IsPackable>
     <IsTestProject>true</IsTestProject>
-    <AssemblyName>Santander.HackerNews.Api.Tests</AssemblyName>
+    <AssemblyName>HackerNews.BestStories.Api.Tests</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Santander.HackerNews.Api\Santander.HackerNews.Api.csproj" />
+    <ProjectReference Include="..\HackerNews.BestStories.Api\HackerNews.BestStories.Api.csproj" />
   </ItemGroup>
 
   <ItemGroup>

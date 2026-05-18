@@ -1,9 +1,9 @@
 ﻿using Microsoft.Extensions.Caching.Memory;
-using Santander.HackerNews.Api.Infrastructure;
-using Santander.HackerNews.Api.Models;
+using HackerNews.BestStories.Api.Infrastructure;
+using HackerNews.BestStories.Api.Models;
 using System.Globalization;
 
-namespace Santander.HackerNews.Api.Services;
+namespace HackerNews.BestStories.Api.Services;
 
 /// <summary>
 /// Application service responsible for retrieving and ranking Hacker News stories.
